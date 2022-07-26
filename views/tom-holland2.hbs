@@ -1,0 +1,38 @@
+{{> header title="Tom Holland | Multiverse"}}
+    <div class="s-wrapper">
+
+        {{> videoBackground video="spiderman2-2019-trailer"}}
+
+        <div class="s-left-column">
+            {{> navbarside icon="spiderman1-tom"}}
+                <ul>
+                    {{#each link}}
+                        <li><a href="{{this.linkSite}}">{{this.num}}</a></li>
+                    {{/each}}
+                </ul>
+            </nav>
+        </div>
+
+        <div class="s-main-content">
+            <div class="s-main-content__top">
+                {{> logoHero logoFilm="spiderman-tom/movie-02/logo"}}
+
+                {{> sinopsis
+                    year= 2019 director="Jon Watts"
+                    resumen="Peter Parker decide pasar unas merecidas vacaciones en Europa junto a MJ, Ned y el resto de sus amigos. Sin embargo, Peter debe volver a ponerse el traje de Spider-Man cuando Nick Fury le encomienda una nueva misión: frenar el ataque de unas criaturas que están causando el caos en el continente"
+                }}
+
+                {{> playTrailer linkTrailer="https://www.youtube.com/watch?v=TYMMOjBUPMM"}}
+            </div>
+            <div class="s-main-content__bottom">
+                <div class="gallery">
+                    <ul>
+                        {{#each picture}}
+                            <li><a data-fancybox href="/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg"><img src="/images/{{this.actor}}/movie-{{this.numFolder}}/gallery/image-{{this.num}}.png" alt=""></a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{{> footer}}

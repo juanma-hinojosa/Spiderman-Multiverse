@@ -1,0 +1,35 @@
+{{> header title="Andrew Garfield | Multiverse"}}
+    <div class="s-wrapper">
+        {{> videoBackground video="amazing-spiderman2-2014-trailer"}}
+        <div class="s-left-column">
+            {{> navbarside icon="spiderman1-andrew"}}
+                <ul>
+                    {{#each link}}
+                        <li><a href="{{this.linkSite}}">{{this.num}}</a></li>
+                    {{/each}}
+                </ul>
+            </nav>
+        </div>
+        <div class="s-main-content">
+            <div class="s-main-content__top">
+                {{> logoHero logoFilm="spiderman-andrew/movie-02/logo"}}
+
+                {{> sinopsis
+                    year= 2014 director="Marc Webb"
+                    resumen="La vida de Peter Parker no es como la de cualquier adolescente. El joven compagina su tiempo luchando contra el mal convertido en Spider-Man y estudiando en el instituto junto con la chica a la que quiere, Gwen"
+                }}
+
+                {{> playTrailer linkTrailer="https://www.youtube.com/watch?v=cCXW3KE8Bto"}}
+            </div>
+            <div class="s-main-content__bottom">
+                <div class="gallery">
+                    <ul>
+                        {{#each picture}}
+                            <li><a data-fancybox href="/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg"><img src="/images/{{this.actor}}/movie-{{this.numFolder}}/gallery/image-{{this.num}}.png" alt=""></a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{{> footer}}

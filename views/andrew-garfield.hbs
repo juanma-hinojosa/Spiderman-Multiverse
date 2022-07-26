@@ -1,0 +1,35 @@
+{{> header title="Andrew Garfield | Multiverse"}}
+    <div class="s-wrapper">
+        {{> videoBackground video="amazing-spiderman-2014-trailer"}}
+        <div class="s-left-column">
+            {{> navbarside icon="spiderman1-andrew"}}
+                <ul>
+                    {{#each link}}
+                        <li><a href="{{this.linkSite}}">{{this.num}}</a></li>
+                    {{/each}}
+                </ul>
+            </nav>
+        </div>
+        <div class="s-main-content">
+            <div class="s-main-content__top">
+                {{> logoHero logoFilm="spiderman-andrew/movie-01/logo"}}
+
+                {{> sinopsis
+                    year= 2012 director="Marc Webb"
+                    resumen="Como la mayoría de los adolescentes de su edad, Peter está intentando descubrir quién es y cómo ha llegado a ser lo que es. En su viaje para atar los cabos de su pasado, descubre un secreto familiar que finalmente dará forma a su destino como Spiderman"
+                }}
+
+                {{> playTrailer linkTrailer="https://www.youtube.com/watch?v=eou9olJruK4"}}
+            </div>
+            <div class="s-main-content__bottom">
+                <div class="gallery">
+                    <ul>
+                        {{#each picture}}
+                            <li><a data-fancybox href="/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg"><img src="/images/{{this.actor}}/movie-{{this.numFolder}}/gallery/image-{{this.num}}.png" alt=""></a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{{> footer}}

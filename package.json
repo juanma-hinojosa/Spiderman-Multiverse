@@ -1,0 +1,15 @@
+{
+  "name": "spiderman-multiverse",
+  "version": "1.0.0",
+  "description": "Reviews about Spider-Man Movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Hinojosa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0"
+  }
+}

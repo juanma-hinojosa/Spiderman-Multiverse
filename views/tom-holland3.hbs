@@ -1,0 +1,35 @@
+{{> header title="Tom Holland | Multiverse"}}
+    <div class="s-wrapper">
+        {{> videoBackground video="spiderman3-2021-trailer"}}
+        <div class="s-left-column">
+            {{> navbarside icon="spiderman1-tom"}}
+                <ul>
+                    {{#each link}}
+                        <li><a href="{{this.linkSite}}">{{this.num}}</a></li>
+                    {{/each}}
+                </ul>
+            </nav>
+        </div>
+        <div class="s-main-content">
+            <div class="s-main-content__top">
+                {{> logoHero logoFilm="spiderman-tom/movie-03/logo"}}
+
+                {{> sinopsis
+                    year= 2021 director="Jon Watts"
+                    resumen="Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura. Peter decide pedirle ayuda al Doctor Extraño para recuperar su vida. Pero algo sale mal y provoca una fractura en el multiverso"
+                }}
+
+                {{> playTrailer linkTrailer="https://www.youtube.com/watch?v=SkmRT3M4Vx4"}}
+            </div>
+            <div class="s-main-content__bottom">
+                <div class="gallery">
+                    <ul>
+                        {{#each picture}}
+                            <li><a data-fancybox href="/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg"><img src="/images/{{this.actor}}/movie-{{this.numFolder}}/gallery/image-{{this.num}}.png" alt=""></a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{{> footer}}

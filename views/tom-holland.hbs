@@ -1,0 +1,38 @@
+{{> header title="Tom Holland | Multiverse"}}
+    <div class="s-wrapper">
+
+        {{> videoBackground video="spiderman-2017-trailer"}}
+
+        <div class="s-left-column">
+            {{> navbarside icon="spiderman1-tom"}}
+                <ul>
+                    {{#each link}}
+                        <li><a href="{{this.linkSite}}">{{this.num}}</a></li>
+                    {{/each}}
+                </ul>
+            </nav>
+        </div>
+
+        <div class="s-main-content">
+            <div class="s-main-content__top">
+                {{> logoHero logoFilm="spiderman-tom/movie-01/logo"}}
+
+                {{> sinopsis
+                    year= 2017 director="Jon Watts"
+                    resumen="Peter Parker asume su nueva identidad como Spider-Man y regresa a vivir con su tía después de su aventura con los Vengadores. Al volver, mientras sigue bajo la tutela de Tony Stark, descubre que ha surgido un nuevo y despiadado enemigo que pretende destruir todo lo que ama: el Buitre."
+                }}
+
+                {{> playTrailer linkTrailer="https://www.youtube.com/watch?v=TYMMOjBUPMM"}}
+            </div>
+            <div class="s-main-content__bottom">
+                <div class="gallery">
+                    <ul>
+                        {{#each picture}}
+                            <li><a data-fancybox href="/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg"><img src="/images/{{this.actor}}/movie-{{this.numFolder}}/gallery/image-{{this.num}}.png" alt=""></a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{{> footer}}

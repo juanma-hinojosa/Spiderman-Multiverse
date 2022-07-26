@@ -1,0 +1,35 @@
+{{> header title="Tobey Maguire | Multiverse"}}
+    <div class="s-wrapper">
+        {{> videoBackground video="spiderman3-2007-trailer"}}
+        <div class="s-left-column">
+            {{> navbarside icon="spiderman1"}}
+                <ul>
+                    {{#each link}}
+                        <li><a href="{{this.linkSite}}">{{this.num}}</a></li>
+                    {{/each}}
+                </ul>
+            </nav>
+        </div>
+        <div class="s-main-content">
+            <div class="s-main-content__top">
+                {{> logoHero logoFilm="spiderman-tobey/movie-03/logo"}}
+
+                {{> sinopsis
+                    year= 2007 director="Sam Raimi"
+                    resumen="Peter Parker sufre una terrible transformación cuando su traje se vuelve negro y libera su personalidad oscura y vengativa. Afrontará el mayor desafío de su vida al tener que redescubrir la humildad y compasión que lo hacen ser quien es: un héroe"
+                }}
+
+                {{> playTrailer linkTrailer="https://www.youtube.com/watch?v=cCXW3KE8Bto"}}
+            </div>
+            <div class="s-main-content__bottom">
+                <div class="gallery">
+                    <ul>
+                        {{#each picture}}
+                            <li><a data-fancybox href="/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg"><img src="/images/{{this.actor}}/movie-{{this.numFolder}}/gallery/image-{{this.num}}.png" alt=""></a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{{> footer}}
