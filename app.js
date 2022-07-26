@@ -1,10 +1,10 @@
 const express = require("express");
 const hbs = require("hbs");
 const app = express();
-const Port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
-app.listen(Port, () => {
-    console.log(`Servidor corriendo en el puert ${Port}`);
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en el puert ${PORT}`);
 })
 
 app.on("error", (error) => {
